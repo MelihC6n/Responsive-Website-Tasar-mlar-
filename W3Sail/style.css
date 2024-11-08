@@ -1,0 +1,370 @@
+*{
+    font-family: Segoe UI, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+a{
+    margin: 0px !important;
+}
+ul{
+    list-style: none;
+}
+nav{
+    position: fixed;
+    z-index: 10;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.navUl{
+    color: white;
+    display: flex;
+}
+
+.innerNav{
+    display: flex;
+}
+.navUl li,.navUl li a{
+    cursor: pointer;
+    padding: 10px 0px;
+    text-decoration: none;
+}
+.navUl li a{
+    padding: 10px 16px;
+}
+.navUl li:hover a{
+    background-color: white;
+    color: black;
+}
+
+.logo{
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #009688;
+    color: white;
+    padding: 10px 16px;
+}
+.logo i{
+    margin-right: 5px;
+}
+.logo:hover{
+    background-color: #ccc !important;
+    color: black;
+}
+
+.search{
+    color: white;
+    padding: 10px 16px;
+}
+.search-text{
+    padding: 10px 16px !important;
+}
+.search:hover{
+    background-color: #009688;
+}
+
+.menu-checkbox{
+    display: none;
+}
+
+.hamburger{
+    display: none;
+    padding: 10px 16px;
+    color: white;
+    cursor: pointer;
+    background-color: black;
+}
+.banner{
+    position: relative;    
+    height: fit-content;
+}
+.banner img{
+    width: 100%;
+    max-height: 570px;
+    min-height: 300px;
+}
+.banner-button{
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: x-large;
+    width: fit-content;
+    position: absolute;
+    bottom: 5%;
+    left: 20px;
+}
+.banner-button:hover{
+    background-color: #009688;
+    border: none;
+}
+.team,.pricing{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+}
+.team-members,.price-options{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.team-card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+.team-card img{
+    width: 45%;
+    border-radius: 50%;
+}
+.team-card img:hover{
+    opacity: 50%;
+}
+.team-card h3{
+    margin-top: 20px;
+    font-weight: 400;
+    opacity: 100%;
+    font-size: 1.6rem;
+}
+.team-card p{
+    margin-top: 20px;
+    color: black;
+}
+
+.work{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 100%;
+    background-color: #333333;
+    display: flex;
+    position: relative;
+}
+.work-text{
+    margin: 10px;
+    padding-top: 10px;
+    width: 24%;
+}
+.work-text h2, p{
+    color: white;
+    font-family: verdana,  sans-serif, fontawesome, segoe;
+    font-weight: 400;
+    margin: 10px 0;
+}
+.work-text h2{
+    font-size: xx-large;
+}
+.work-card{
+    margin: 10px;
+    width: 24%;
+    background-color: white;
+    padding-bottom: 10px;
+}
+.work-card p, h4, h3{
+    color: black;
+    padding-left: 20px;
+}
+.work-card h4, h3{
+    font-weight: 400;
+    font-size: 20px;
+    margin:12px 0px;
+}
+.work-card img{
+    width: 100%;
+}
+
+.plus-button{
+    position: absolute;
+    background-color: #009688;
+    padding: 16px;
+    color: white;
+    border-radius: 50%;
+    bottom: -25px;
+    right: 25px;
+}
+
+.price-card{
+    border-right: 1px solid #dcdcdc;
+    border-left: 1px solid #dcdcdc;
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.price-card:hover{
+    box-shadow: 4px 4px 20px rgb(167, 167, 167);
+}
+
+.price-card-bottom{
+    background-color: #f0f0f0;
+}
+.price-card li{
+    width: 100%;
+    text-align: center;
+    padding: 20px 0px;
+    border-bottom: 1px solid #dcdcdc
+}
+.price-card p{
+    font-size: x-large;
+}
+.price-card-dolar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.price-card-dolar h2{
+    font-weight: 400;
+    font-size: xx-large;
+}
+.price-card li br+p{
+    color: black;
+    opacity: 50%;
+    margin: 0;
+    padding: 0;
+    font-size: .9rem;
+}
+
+.contact{
+    background-color: #f0f0f0;
+    display: flex;
+    padding: 50px 20px;
+    justify-content: space-between;
+}
+.contact-info{
+    width: 43%;
+}
+.contact-info p{
+    margin: 20px 0px;
+    color: black;
+}
+.contact-info p i{
+    color: #009688;
+}
+.contact-form{
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 57%;
+    border: 1px solid #d0d0d0;
+    box-shadow: 0px 0px 20px rgb(167, 167, 167);
+}
+.contact-form input{
+    font-size: large;
+    height: 35px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 2px 10px;
+    margin-bottom: 5px;
+}
+.form-check-area{
+    display: flex;
+    justify-content: space-between;
+}
+.form-check-area div{
+    display: flex;
+    align-items: center;
+    font-size: large;
+}
+
+.footer{
+    background-color: black;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.footer h4,p,a{
+    padding: 0;
+    margin: 8px 0px;
+    color: white;
+}
+.socials{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.go-up{
+    display: flex;
+    gap: 10px;
+    color: white;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    top: 90px;
+}
+.go-up i{
+    color: white;
+    padding: 25px 15px;
+}
+.go-up i:hover{
+    color: black;
+    background-color: #ccc;
+}
+.go-up .logo{
+    opacity: 0;
+}
+.go-up:hover .logo{
+    opacity: 1;
+}
+
+
+@media (max-width:768px){
+    .innerNav{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .navUl{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 38px;
+        background-color: black;
+        width: 100%;
+        z-index: 100;
+    }
+    .navUl li{
+        visibility: visible !important;
+        padding: 0;;
+    }
+    .navUl li a{
+        display: block; 
+        width: 100%;       
+    }
+    .search{
+        display: none;
+    }
+    .team-members,.price-options,.contact{
+        flex-direction: column;   
+        align-items: center;
+    }
+    .work{
+        flex-direction: column;
+    }
+    .work-text,.work-card,.price-card,.contact-info,.contact-form{
+        width: 96%;
+    }
+
+    .menu-checkbox:checked + .hamburger + .navUl{
+        display: flex;
+    }
+    .menu-checkbox:checked + .hamburger{
+        color: black;
+        background-color: white;
+    }
+
+    .hamburger{
+        display: inline-block;
+    }
+}
