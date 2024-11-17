@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f5f7f8;
+}
+p{
+    font-size: 0.96rem !important;
+    font-weight: 100;
+}
+ul{
+    list-style: none;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: #4d636f;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav *{
+    cursor: pointer;
+}
+.navLeft{
+    display: flex;
+}
+.navLeft a{
+    font-size: large;
+    background-color: #3a4b53;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    text-decoration: none;
+    gap: 10px;
+    padding: 15px 20px;
+}
+.navLeft a:hover{
+    color: black;
+    background-color: #ccc;
+}
+.navUl{
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+.navUl li{
+    padding: 15px 25px;
+    font-size: large;
+}
+.navUl li:hover{
+    background-color: white;
+    color: black;
+}
+.notification:hover{
+    background-color: #ccc !important;
+}
+.notification:hover .nots{
+    display: inline;
+}
+.notification{
+    position: relative;
+    padding-right: 40px !important;
+}
+.dot{
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 18px;
+    background-color: rgb(1, 185, 1);
+    font-weight: 100;
+    font-size: small;
+    padding: 1px 6px;
+    border-radius: 50%;
+}
+.nots{
+    width: max-content;
+    background-color: white;
+    position: absolute;
+    top:50px;
+    left: 0px;
+    display: none;
+}
+.border-shadow{
+    box-shadow: 1px 1px 6px 2px rgb(210, 210, 210);
+}
+.nots p{
+    padding: 10px 15px;
+}
+.nots p:hover{
+    background-color: #ccc;
+    font-weight: 100;
+}
+.navRight{
+    padding: 9px 20px;
+}
+.navRight:hover{
+    background-color: white;
+}
+.navRight img{
+    height: 28px !important;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.container{
+    max-width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    padding-top: 80px;
+    padding-right: 10px;
+    padding-left: 10px;
+    gap: 14px;
+}
+.personal{
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.wall{
+    width: 58%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.events{
+    border: 1px solid black;
+    height: 200px;
+    width: 17%;
+}
+.pad{
+    padding: 15px;
+}
+.profile-info{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    width: 100%;
+}
+.profile-details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.profile-details i, .my-pages i{
+    color: #4d636f;
+    font-size: medium;
+    margin-right: 20px;
+}
+hr{
+    width: 100%;
+    opacity: 0.3;
+}
+
+.profile-info img{
+    width: 100px;
+    border-radius: 50%;
+}
+.my-pages p{
+    text-align: start;
+    padding: 10px 15px;
+}
+.my-pages{
+    background-color: #7d97a5;
+    color: white;
+}
+.my-pages p:hover{
+    background-color: #ccc;
+    color: black;
+}
+.my-pages p i{
+    color: white;
+}
+.my-pages p:hover i{
+    color: black;
+}
+.tags{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.tags span{
+    font-size: smaller;
+    padding: 3px 6px;
+    margin: 2px;
+}
+.brad{
+    border-radius: 5px;
+}
+.area{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+.button{
+    width: fit-content;
+    background-color: #607d8b;
+    padding: 10px;
+    color: white ;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: #ccc;
+    color: black;
+}
+.button i{
+    margin-right: 5px;
+}
+
+.poster{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+.poster img{
+    width: 60px;
+    border-radius: 50%;
+}
+.poster p{
+    font-size: 1.3rem !important;
+    margin-left: 15px;
+}
+.poster span{
+    opacity: 0.6;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.post-photos{
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+.post-photos img{
+    width: calc(50% - 7.5px);
+    height: auto;
+    object-fit: contain; 
+}
+.btn-area{
+    display: flex;
+    gap: 5px;
+}
