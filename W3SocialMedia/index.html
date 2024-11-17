@@ -34,6 +34,15 @@
                 </li>
             </ul>
         </div>
+        <input type="checkbox" name="chk_hamburger" id="chk_hamburger">
+        <div class="hamburger_menu my-pages">
+                    <p>My Groups</p>
+                    <p>My Events</p>                    
+                    <p>My Photos</p>
+        </div>
+        <label for="chk_hamburger" id="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </label>
         <div class="navRight">
             <img src="images/avatar2.png" alt="">
         </div>
@@ -53,11 +62,36 @@
             </div>
 
             <div class="my-pages border-shadow">
-                <p><i class="fa-solid fa-users-rectangle"></i>
-                My Groups</p>
-                <p><i class="fa-regular fa-calendar-check"></i>My Events</p>
-                <p><i class="fa-solid fa-photo-film"></i>
-                My Photos</p>
+                <input type="checkbox" name="chk_group" id="chk_group">
+                <label for="chk_group">
+                    <p><i class="fa-solid fa-users-rectangle"></i>
+                    My Groups</p>
+                </label>
+                <div class="chk_group_acordion">
+                    <span>Some text.</span>
+                </div>
+
+                <input type="checkbox" name="chk_event" id="chk_event">
+                <label for="chk_event">
+                    <p><i class="fa-regular fa-calendar-check"></i>&nbsp;&nbsp;My Events</p>
+                </label>
+                <div class="chk_event_acordion">
+                    <span>Some text.</span>
+                </div>
+                
+                <input type="checkbox" name="chk_photos" id="chk_photos">
+                <label for="chk_photos">
+                    <p><i class="fa-solid fa-photo-film"></i>
+                    My Photos</p>
+                </label>
+                <div class="chk_photos_acordion">
+                    <img src="images/lights.jpg" alt="">
+                    <img src="images/nature (1).jpg" alt="">
+                    <img src="images/mountains.jpg" alt="">
+                    <img src="images/forest.jpg" alt="">
+                    <img src="images/nature (1).jpg" alt="">
+                    <img src="images/snow.jpg" alt="">
+                </div>
             </div>
 
             <div class="interests border-shadow pad brad" style="background-color: white;">
@@ -75,6 +109,15 @@
                     <span style="background-color:#dfe5e8">Art</span>
                     <span style="background-color:#ecf0f1">Photos</span>
                 </div>
+            </div>
+
+            <input type="checkbox" name="hey_check" id="hey_check">
+            <div class="hey pad brad area">
+                <label for="hey_check">
+                    <i class="fa-solid fa-xmark"></i>
+                </label>
+                <h4>Hey!</h4>
+                <p>People are looking at your profile. Find out who.</p>
             </div>
         </div>
 
@@ -144,10 +187,41 @@
         </div>
 
         <div class="events">
+            <div class="upcoming-events border-shadow brad area-center pad">
+                <p>Upcoming Events:</p>
+                <img src="images/forest.jpg" alt="">
+                <h4>Holiday</h4>
+                <p>Friday 15:00</p>
+                <div class="jbutton" style="background-color: #dfe5e8;">Info</div>
+            </div>
 
+            <div class="border-shadow brad area-center pad">
+                <p>Friend Request</p>
+                <img src="images/avatar6.png" alt="" style="width: 50%;">
+                <p>Jane Doe</p>
+                <div style="display: flex; width: 100%; color: white;">
+                    <div class="jbutton" style="background-color: #94cf96;"><i class="fa-solid fa-check"></i></div>
+                    <div class="jbutton" style="background-color: #f88e86;"><i class="fa-solid fa-xmark"></i></div>
+                </div>
+            </div>
+
+            <div class="border-shadow brad area-center" style="padding: 30px;">
+                <p>ADS</p>
+            </div>
+
+            <div class="border-shadow brad area-center" style="padding: 50px;">
+                <i class="fa-solid fa-bug fa-2xl"></i>
+            </div>
         </div>
     </div>
+    
+    <footer>
+        Footer
+    </footer>
 
+    <div class="bottom">
+        Powered by <a href="https://github.com/MelihC6n" style="color: white;"> Melih Can Akgüneş</a>
+    </div>
     <script src="https://kit.fontawesome.com/f8468d9408.js" crossorigin="anonymous"></script>
 </body>
 </html>

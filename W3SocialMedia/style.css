@@ -23,6 +23,11 @@ nav{
     align-items: center;
     justify-content: space-between;
 }
+
+input[type="checkbox"]{
+    display: none;
+}
+
 nav *{
     cursor: pointer;
 }
@@ -113,9 +118,10 @@ nav *{
     margin-left: auto;
     display: flex;
     padding-top: 80px;
+    padding-bottom: 40px;
     padding-right: 10px;
     padding-left: 10px;
-    gap: 14px;
+    gap: 16px;
 }
 .personal{
     width: 24%;
@@ -130,9 +136,10 @@ nav *{
     gap: 20px;
 }
 .events{
-    border: 1px solid black;
-    height: 200px;
     width: 17%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 .pad{
     padding: 15px;
@@ -167,6 +174,7 @@ hr{
     border-radius: 50%;
 }
 .my-pages p{
+    cursor: pointer;
     text-align: start;
     padding: 10px 15px;
 }
@@ -196,10 +204,18 @@ hr{
 }
 .brad{
     border-radius: 5px;
+    background-color: white;
 }
 .area{
     display: flex;
     flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+.area-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 15px;
     width: 100%;
 }
@@ -251,4 +267,143 @@ hr{
 .btn-area{
     display: flex;
     gap: 5px;
+}
+
+.upcoming-events img{
+    width: 100%;
+}
+
+.jbutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 100%;
+    height: 36px;
+}
+.jbutton:hover{
+    background-color: #ccc !important;
+    color: gray;
+}
+
+footer{
+    background-color: #435761;
+    padding: 30px 15px;
+    color: white;
+    font-size: larger;
+    font-weight: 100;
+}
+.bottom{
+    background-color: #303e45;
+    color: white;
+    padding: 20px 15px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.hey{
+    background-color: #dfe5e8;
+    border: 1px solid #c9d7de;
+    position: relative;
+}
+.hey label{
+cursor: pointer;
+background-color: #becbd2;
+padding: 10px 14px;
+position: absolute;
+right: 0px;
+top: 0px;
+}
+.hey label:hover{
+    background-color: #ccc;
+    }
+
+#hey_check:checked ~ .hey{
+    display: none;
+}
+
+.chk_photos_acordion {
+    padding: 15px 30px;
+    background-color: white;
+    display: none;
+    grid-template-columns: repeat(2, 1fr);   grid-template-rows: repeat(3, auto);
+    gap: 10px;
+    width: 100%;
+}
+
+.chk_photos_acordion img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.chk_group_acordion,.chk_event_acordion{
+    display: none;
+    padding: 16px 10px;
+    background-color: white;
+    color: black;
+}
+#chk_group:checked ~ .chk_group_acordion{
+    display: block;
+}
+#chk_group:checked + label p {
+    background-color: #57707d;
+}
+
+#chk_event:checked ~ .chk_event_acordion{
+    display: block;
+}
+#chk_event:checked + label p {
+    background-color: #57707d;
+}
+
+#chk_photos:checked ~ .chk_photos_acordion{
+    display: grid;
+}
+#chk_photos:checked + label p {
+    background-color: #57707d;
+}
+
+
+#hamburger{
+    padding: auto;
+    display: none;
+    color: white;
+    padding: 15px 20px;
+}
+.hamburger_menu{
+    background-color: #4d636f;
+    color: white;
+    width: 100%;
+    position: absolute;
+    top: 48px;
+    display: none;
+}
+
+#chk_hamburger:checked ~ .hamburger_menu{
+    display: block;
+}
+
+#chk_hamburger:checked ~ #hamburger{
+background-color: white;
+color: #303e45;
+}
+
+@media(max-width:600px){
+    .container{
+        flex-direction: column;
+    }
+    .personal, .wall, .events{
+        width: 100%;
+    }
+
+    .navUl{
+        display: none;
+    }
+    .navRight{
+        display: none;
+    }
+
+    #hamburger{
+        display: block;
+    }
 }
