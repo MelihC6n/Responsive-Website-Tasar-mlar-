@@ -1,4 +1,5 @@
 const nameEl=document.getElementById("name");
+const imageEl=document.getElementById("image");
 const titleEl=document.getElementById("title");
 const locationEl=document.getElementById("location");
 const emailEl=document.getElementById("email");
@@ -16,6 +17,7 @@ fetch("./db.json").then(res => res.json()).then(data =>
     locationEl.innerHTML+=data.profile.location;
     emailEl.innerHTML+=data.profile.email;
     phoneEl.innerHTML+=data.profile.phone;
+    imageEl.src = data.profile.image;
 
     data.profile.skills.forEach(element => {
         skillAreaEl.innerHTML += `

@@ -5,6 +5,7 @@
       "location": "İstanbul, TR",
       "email": "melihcanakgunes@gmail.com",
       "phone": "+90 505 106 50 60",
+      "image" : "image.png",
       "skills": [
         { "name": "C#", "level": "90" },
         { "name": "Angular", "level": "75" },
