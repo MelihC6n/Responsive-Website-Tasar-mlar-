@@ -1,0 +1,48 @@
+{
+    "profile": {
+      "name": "Melih Can Akgüneş",
+      "title": "Junior Dev",
+      "location": "İstanbul, TR",
+      "email": "melihcanakgunes@gmail.com",
+      "phone": "+90 505 106 50 60",
+      "skills": [
+        { "name": "C#", "level": "90" },
+        { "name": "Angular", "level": "75" },
+        { "name": "Javascript", "level": "70" },
+        { "name": "SQL", "level": "90" }
+      ],
+      "languages": [
+        { "language": "English", "proficiency": "75" },
+        { "language": "Japanese", "proficiency": "15" }
+      ]
+    },
+    "workExperience": [
+      {
+        "role": "Full Stack .Net Developer Trainee",
+        "company": "İstanbul Eğitim Akademi",
+        "startDate": "Haziran 2024",
+        "endDate": "Devam Ediyor",
+        "description": "Yetenek Başakşehir programı kapsamında 480 saatlik full-stack geliştirme odaklı teknik ve pratik eğitim almaktayım. Bu süreçte, Udemy üzerinden ek eğitimlerle farklı alanlarda kendimi geliştirmekte ve küçük projelerle öğrendiklerimi pekiştirmekteyim."
+      },
+      {
+        "role": "Juniour Back-End Developer Intern",
+        "company": "DEÜ Bilgi İşlem Dairesi Başkanlığı ",
+        "startDate": "Haziran 2019",
+        "endDate": "Eylül 2019",
+        "description": "Rektörlük için okulun yönetiminde bulunulduğu bir otele kullanıcı ve personel taraflı bir rezervasyon sitesi projesinin Back-End’inde görev aldım."
+      }
+    ],
+    "education": [
+      {
+        "institution": "Anadolu Üniversitesi",
+        "period": "2021 - 2023",
+        "description": "Lisans - Yönetim Bilişim Sistemleri"
+      },
+      {
+        "institution": "Dokuz Eylül Üniversitesi",
+        "period": "2017 - 2019",
+        "description": "Önlisans - Bilgisayar Programcılığı"
+      }
+    ]
+}
+  

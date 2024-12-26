@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f1f1f1;
+}
+hr{
+    width: 93%;
+    margin-left: 3.5%;
+    opacity: 0.2;
+}
+
+.container{
+    max-width: 1440px;
+    height: 100%;
+    background-color: #f1f1f1;
+    padding: 18px;
+    display: flex;
+    gap: 15px;
+}
+
+.personal-card,.experience,.education{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    box-shadow: 0px 0px 6px 4px rgb(209, 209, 209);
+    height: fit-content;
+}
+.cv-info{
+    width: 67%;
+}
+.experience,.education{
+    width: 100%;
+}
+.personal-card i,.experience i,.education i{
+    color: #009688;
+}
+
+.image{
+    position: relative;
+}
+.image img{
+    width: 100%;
+}
+.image h2{
+    position: absolute;
+    bottom: 18px;
+    left: 18px;
+    font-family: "Roboto", sans-serif;
+    font-size: xx-large;
+    font-weight: 100;
+}
+.info i{
+    margin-right: 15px;
+    font-size: medium !important;
+}
+.info p{
+    margin: 20px;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.skills,.languages{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 14px;
+}
+.skills h3,.languages h3{
+    font-size: 1.1rem;
+    color:gray;
+    margin-bottom: 5px;
+}
+.skills i,.languages i,.experience i,.education i{
+    margin-right: 15px;
+}
+.skills p,.languages p{
+    color: gray;
+}
+
+.skillbar,.languagebar{
+    background-color: #f1f1f1;
+    height: 18px;
+    width: 100%;
+    border-radius: 15px;
+    position: relative;
+}
+.languagebar{
+    height: 23px;
+}
+.percentage{
+    background-color: #009688;
+    font-size: 13px;
+    color: white;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    text-align: center;
+}
+
+
+.cv-info{
+    width: 67%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.experience h2,.education h2{
+    font-size: 1.9rem;
+    font-weight: 100;
+    color:gray;
+    margin: 28px 20px 10px 20px;
+}
+.experience h3,.education h3{
+    font-size: 1.1rem;
+    color:gray;
+}
+.experience h4,.education h4{
+    font-size: 1rem;
+    color:#009688;
+    font-weight: 400;
+}
+.experience p,.education p{
+    font-size: 0.96rem;
+    font-weight: 400;
+}
+.sub-exp{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 30px;
+}
+.current{
+    background-color: #009688;
+    color: white;
+    padding: 4px 6px;
+    border-radius: 5px;
+}
+
+footer{
+    background-color: #009688;
+    width:100% ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer p{
+    color: white;
+    margin: 20px;
+}
+.sidebar-icon{
+    list-style: none;
+    display: flex;
+    gap:5px;
+}
+.sidebar-icon li{
+    background-color: #009688;
+    color: white;
+}
+.sidebar-icon li:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+
+@media(max-width:600px){
+    .container{
+        flex-direction: column;
+    }
+    .personal-card{
+        width: 100%;
+    }
+    .cv-info{
+        width: 100%;
+    }
+}
