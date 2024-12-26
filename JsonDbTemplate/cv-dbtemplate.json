@@ -1,0 +1,62 @@
+{
+    "profile": {
+      "name": "Jane Doe",
+      "title": "Designer",
+      "location": "London, UK",
+      "email": "ex@mail.com",
+      "phone": "1224435534",
+      "skills": [
+        { "name": "Adobe Photoshop", "level": "90%" },
+        { "name": "Photography", "level": "80%" },
+        { "name": "Illustrator", "level": "75%" },
+        { "name": "Media", "level": "50%" }
+      ],
+      "languages": [
+        { "language": "English", "proficiency": "100%" },
+        { "language": "Spanish", "proficiency": "75%" },
+        { "language": "German", "proficiency": "50%" }
+      ]
+    },
+    "workExperience": [
+      {
+        "role": "Front End Developer",
+        "company": "w3schools.com",
+        "startDate": "Jan 2015",
+        "endDate": "Current",
+        "description": "Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste."
+      },
+      {
+        "role": "Web Developer",
+        "company": "something.com",
+        "startDate": "Mar 2012",
+        "endDate": "Dec 2014",
+        "description": "Consectetur adipiscing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste."
+      },
+      {
+        "role": "Graphic Designer",
+        "company": "designsomething.com",
+        "startDate": "Jun 2010",
+        "endDate": "Mar 2012",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      }
+    ],
+    "education": [
+      {
+        "institution": "W3Schools.com",
+        "period": "Forever",
+        "degree": "Web Development",
+        "description": "All I need to know in one place"
+      },
+      {
+        "institution": "London Business School",
+        "period": "2013 - 2015",
+        "degree": "Master Degree"
+      },
+      {
+        "institution": "School of Coding",
+        "period": "2010 - 2013",
+        "degree": "Bachelor Degree"
+      }
+    ]
+}
+  
